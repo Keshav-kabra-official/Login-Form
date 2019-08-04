@@ -1,0 +1,86 @@
+/* Making box-size appropriate to border of box */
+*{
+	box-sizing: border-box;
+
+}
+
+/* Layout of the main form */
+#theForm{
+	color: white;
+	background: linear-gradient(to bottom, #1d4350, #a43931);
+	background-color: #3c3c3c;
+	box-shadow: 0 24px 38px rgba(0, 0, 0, 0.5), 0 20px 20px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	margin: 30px;
+	margin-left: 150px;
+	margin-top: 10px;
+	border: 1px solid black;
+	border-radius: 8px;
+	width: 70%;
+}
+
+/* showing compulsary fields with red star */
+.star{
+	font-size: 20px;
+	color: red;
+}
+
+/* Label and it's colors */
+.row label{
+	display: block;
+	font-size: 20px;
+	color: #71f7c0;
+	padding: 5px;
+}
+
+/* Input and Text-area fields */
+.row input{
+	width: 95%;
+	padding: 5px;
+}
+.row textarea{
+	width: 95%;
+	height: 80px;
+	resize: none;
+}
+
+/* Submit button and Hovering effects */
+input[type=submit] {
+    margin-top: 30px;
+    background:#71f7c0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+	transition: transform 100ms ease-in-out;
+}
+.button:hover{
+	transform: scale(0.95);
+	color: #fff;
+	background-color: red;
+}
+
+/* Mobile-View or smaller window */
+@media(max-width: 768px)
+{
+	#theForm{
+		color: white;
+		background-color: #3c3c3c;
+		box-shadow: 0 24px 38px rgba(0, 0, 0, 0.5), 0 20px 20px rgba(0, 0, 0, 0.5);
+		padding: 20px;
+		margin-left: 150px;
+		margin-top: 10px;
+		border: 2px solid black;
+		border-radius: 8px;
+		width: 40%;
+	}
+	.row input{
+		width: 90%;
+		padding: 5px;
+	}
+	.row textarea{
+		width: 90%;
+		height: 40px;
+		resize: none;
+	}
+}
